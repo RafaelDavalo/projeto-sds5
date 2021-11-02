@@ -1,7 +1,7 @@
 const DataTable = () => {
     return (
 
-        <div className="table-responsive">
+        <div className="table-responsive container">
             <table className="table table-striped table-sm">
                 <thead>
                     <tr>
