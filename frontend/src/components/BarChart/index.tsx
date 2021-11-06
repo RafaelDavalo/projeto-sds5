@@ -19,6 +19,7 @@ type ChartData = {
 
 };
 
+
 const BarChart = () => {
 
     const [chartData, setChartData] = useState<ChartData>({
@@ -67,12 +68,19 @@ const BarChart = () => {
 
 
     return (
-        <Chart
-            options={{ ...options, xaxis: chartData.labels }}
-            series={chartData.series}
-            type="bar"
-            height="240"
-        />
+        <div className="app">
+            <div className="row">
+                <div className="mixed-chart">
+                    <Chart
+                        options={{ ...options, xaxis: chartData.labels }}
+                        series={chartData.series}
+                        type="bar"
+                        height="240"
+                        className="table-responsive animation"
+                    />
+                </div>
+            </div>
+        </div>
     );
 };
 
