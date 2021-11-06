@@ -3,6 +3,7 @@ import DataTable from "components/DataTable";
 import DonutChar from "components/DonutChart";
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
+import Pagination from "components/pagination";
 
 const Dashboard = () => {
     return (
@@ -29,7 +30,7 @@ const Dashboard = () => {
             </div>
             <div className="container py-3">
                 <h2 className="text-primary">Todas as vendas</h2>
-            </div>
+            </div>            
             <DataTable />
             <Footer />
         </>
